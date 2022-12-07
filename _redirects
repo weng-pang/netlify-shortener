@@ -4,7 +4,7 @@
 /example   https://example.com/changed-hooray
 /foo       https://example.com/foo
 /demo      https://www.youtube.com/watch?v=HL6paXyx6hM
-/edit      https://github.com/kentcdodds/netlify-shortener-example/edit/master/_redirects
+/edit      https://github.com/weng-pang/netlify-shortener/edit/main/_redirects
 /linux-exam https://infraexam.com/ndg-linux-essentials-2-0/linux-essentials-2-0-final-comprehensive-exam-chapter-1-18-answers/
 
 /*         https://google.com
