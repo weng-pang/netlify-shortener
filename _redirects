@@ -17,5 +17,7 @@
 /udp https://www.baeldung.com/linux/udp-port-testing
 /port-testing https://www.baeldung.com/linux/udp-port-testing
 /log-technology https://blog.cloudflare.com/log-analytics-using-clickhouse/
+/chat-token https://platform.openai.com/tokenizer
+
 
 /*         https://google.com
