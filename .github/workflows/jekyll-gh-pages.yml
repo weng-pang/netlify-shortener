@@ -37,7 +37,7 @@ jobs:
       uses: actions/upload-pages-artifact@v2
       with:
         name: redirect-index
-        path: ./redirects.md
+        path: ./
   # Build job
   build:
     needs: prepare
