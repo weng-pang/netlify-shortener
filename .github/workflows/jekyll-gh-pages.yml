@@ -34,7 +34,7 @@ jobs:
         echo "| ------- | ------------ |" >> redirects.md
         awk '{print "| " $1 " | " $2 " |"}' _redirects >> redirects.md
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: redirect-index
         path: ./redirects.md
