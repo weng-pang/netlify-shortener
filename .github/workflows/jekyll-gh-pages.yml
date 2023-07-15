@@ -32,7 +32,7 @@ jobs:
       run: |
         echo "| Address | Redirect URL |" > redirects.md
         echo "| ------- | ------------ |" >> redirects.md
-        awk '{print "| [" $1 "](" $2 ") | " $2 " |"}' _redirects >> redirects.md
+        awk '{print "| [" $1 "](" $2 ") | " $2 " |"}' _redirects >> index.md
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
