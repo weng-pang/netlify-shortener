@@ -28,16 +28,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       
-    - name: Generate redirects.md
+    - name: Generate index.md from _redirects
       run: |
-        echo "| Address | Redirect URL |" > redirects.md
-        echo "| ------- | ------------ |" >> redirects.md
+        echo "| Address | Redirect URL |" > index.md
+        echo "| ------- | ------------ |" >> index.md
         awk '{print "| [" $1 "](" $2 ") | " $2 " |"}' _redirects >> index.md
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: redirect-index
-        path: ./redirects.md
+        path: ./index.md
   # Build job
   build:
     needs: prepare
