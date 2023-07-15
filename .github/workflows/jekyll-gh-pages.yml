@@ -34,10 +34,10 @@ jobs:
         echo "| ------- | ------------ |" >> redirects.md
         awk '{print "| " $1 " | " $2 " |"}' _redirects >> redirects.md
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         name: redirect-index
-        path: ./
+        path: ./redirects.md
   # Build job
   build:
     needs: prepare
@@ -46,7 +46,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: redirect-index
           path: ./
